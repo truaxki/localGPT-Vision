@@ -1,19 +1,37 @@
 # Virtual environment
 myenv/
+venv/
+.env/
+
+# Python bytecode
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Logs and databases
 *.log
+*.sqlite3
 
-# API keys
-.env
-
-# Session and document data
+# Session and upload data
 sessions/
 uploaded_documents/
 byaldi_indices/
 
-# IDE-specific files
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# Sensitive files
+*.env
+.env.*
+
+# Model and large data files
+*.pth
+*.pt
+*.bin
